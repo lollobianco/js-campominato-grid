@@ -1,11 +1,36 @@
 #logo{
-   width: 80px;
+   width: 80px
 }
 
 #playButton{
    background-color: #E9E9ED;
 }
 
+/* #boxContainer{
+   width: 40%;
+} */
+
+main{
+   height: 80%;
+   width: 35%;
+   margin: 0 auto;
+}
+
 .bgAqua{
    background-color: #71FFD6;
+   height: 80%;
+}
+
+.box{
+   width: calc(100%/10);
+   aspect-ratio: 1/1;
+   border: 1px solid black;
+}
+
+.headerContainer{
+   height: 10%;
+}
+
+.footerContainer{
+   height: 10%;
 }
