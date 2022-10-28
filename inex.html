@@ -15,15 +15,21 @@
 
       <div class="bg-white headerContainer d-flex align-items-center">
 
-         <header class="d-flex container justify-content-between bg-white">
+         <header class="d-flex container-lg justify-content-between bg-white">
 
             <div class="d-flex align-items-center">
                <div><img src="./assets/img/mobile-logo.png" alt="logo" id="logo"></div>
-               <div class="fs-1 fw-bold">Campo Minato</div>
+               <div class="fw-bold" id="title">Campo Minato</div>
             </div>
 
             <div class="d-flex align-items-center">
-               <button id="playButton" type="button" class="btn fw-semibold btn-light px-4">Play</button> 
+               <span class="fs-5 me-2 difficulties">Difficoltà:</span> 
+               <select class="form-select me-3 fw-semibold" aria-label="Default select example" id="difficulty">
+                  <option value="1">Facile</option>
+                  <option value="2">Media</option>
+                  <option value="3">Difficile</option>
+               </select>
+               <button id="playButton" type="button" class="btn fw-semibold btn-light px-4">Play</button>
             </div>
             
          </header> 
@@ -36,14 +42,14 @@
 
          <div id="boxContainer" class="grid d-flex flex-wrap justify-content-center align-items-center">
 
-
+            <!-- BOX AGGIUNTE DINAMICAMENTE -->
 
          </div>
 
       </main>
 
       <div class="bg-white footerContainer d-flex align-items-center">
-         <footer class="py-4 container">
+         <footer class="py-4 container-lg">
 
             <div class="fs-5 ms-3">Made with &hearts; by Lorenzo Bianconi from Boolean</div>
 
