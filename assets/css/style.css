@@ -6,14 +6,13 @@
    background-color: #E9E9ED;
 }
 
-/* #boxContainer{
-   width: 40%;
-} */
+#boxContainer{
+   width: 35%;
+   margin: 0 auto;
+} 
 
 main{
    height: 80%;
-   width: 35%;
-   margin: 0 auto;
 }
 
 .bgAqua{
@@ -25,6 +24,10 @@ main{
    width: calc(100%/10);
    aspect-ratio: 1/1;
    border: 1px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
 }
 
 .headerContainer{
@@ -33,4 +36,8 @@ main{
 
 .footerContainer{
    height: 10%;
+}
+
+.boxClick{
+   background-color: #8fb8de;
 }
