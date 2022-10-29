@@ -6,6 +6,10 @@
    background-color: #E9E9ED;
 }
 
+#restartButton{
+   background-color: #E9E9ED;
+}
+
 #boxContainer{
    width: 35%;
    margin: 0 auto;

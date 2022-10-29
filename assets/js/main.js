@@ -2,6 +2,8 @@ let boxContainer = document.getElementById('boxContainer');
 
 let playButton = document.getElementById('playButton');
 
+let restartButton = document.getElementById('restartButton');
+
 let difficulty = document.getElementById('difficulty');
 
 
@@ -34,6 +36,10 @@ function createBox(){
 //Funzione che crea le box al click del tasto play in base alla difficoltà
 
 playButton.addEventListener('click', function(){
+
+   playButton.classList.add('d-none');
+
+   restartButton.classList.remove('d-none');
 
    if(difficulty.value == 1){
 
@@ -99,5 +105,25 @@ playButton.addEventListener('click', function(){
          }
 
 
-})
+});
 
+
+playButton.addEventListener('click', function(){
+
+   playButton.classList.add('d-none');
+
+   restartButton.classList.remove('d-none');
+
+});
+
+
+
+restartButton.addEventListener('click', function(){
+
+   playButton.classList.remove('d-none');
+
+   restartButton.classList.add('d-none');
+
+   boxContainer.innerHTML = '';
+
+});
