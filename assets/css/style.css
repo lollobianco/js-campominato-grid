@@ -24,34 +24,25 @@ main{
    height: 80%;
 }
 
-.boxEasy{
-   width: calc(100%/10);
+.box{
    aspect-ratio: 1/1;
    border: 1px solid black;
    display: flex;
    align-items: center;
    justify-content: center;
-   cursor: pointer;
+   cursor: crosshair;
+}
+
+.boxEasy{
+   width: calc(100%/10);
 }
 
 .boxMedium{
    width: calc(100%/9);
-   aspect-ratio: 1/1;
-   border: 1px solid black;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   cursor: pointer;
 }
 
 .boxHard{
    width: calc(100%/7);
-   aspect-ratio: 1/1;
-   border: 1px solid black;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   cursor: pointer;
 }
 
 .headerContainer{

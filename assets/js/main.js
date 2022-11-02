@@ -16,15 +16,15 @@ function createBox(){
 
    if(difficulty.value == 1){
 
-      box.classList.add('boxEasy', 'fs-5');
+      box.classList.add('boxEasy', 'box', 'fs-5');
 
    }  else if (difficulty.value == 2){
 
-         box.classList.add('boxMedium', 'fs-5');
+         box.classList.add('boxMedium', 'box', 'fs-5');
 
       }  else{
 
-            box.classList.add('boxHard', 'fs-5');
+            box.classList.add('boxHard', 'box', 'fs-5');
       
          }
 
@@ -37,9 +37,7 @@ function createBox(){
 
 playButton.addEventListener('click', function(){
 
-   playButton.classList.add('d-none');
-
-   restartButton.classList.remove('d-none');
+   boxContainer.innerHTML = '';
 
    if(difficulty.value == 1){
 
@@ -104,26 +102,5 @@ playButton.addEventListener('click', function(){
 
          }
 
-
-});
-
-
-playButton.addEventListener('click', function(){
-
-   playButton.classList.add('d-none');
-
-   restartButton.classList.remove('d-none');
-
-});
-
-
-
-restartButton.addEventListener('click', function(){
-
-   playButton.classList.remove('d-none');
-
-   restartButton.classList.add('d-none');
-
-   boxContainer.innerHTML = '';
 
 });
